@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @assignee %>
+
+<div>
+  <%= link_to "Edit this assignee", edit_assignee_path(@assignee) %> |
+  <%= link_to "Back to assignees", assignees_path %>
+
+  <%= button_to "Destroy this assignee", @assignee, method: :delete %>
+</div>
